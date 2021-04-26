@@ -92,6 +92,14 @@ module.exports = function chainCSS(config, vueConfig, vusionConfig) {
                 })
                 .end();
         }
+
+        postcssLoader
+            .use('sass-resources-loader')
+            .loader('sass-resources-loader')
+            .options({
+                resources: path.resolve(__dirname, '../scenes/doc/components/common/uview-ui/theme.scss'),
+            })
+            .end()
     });
 
     const variablesPostcssPlugins = getVariablesPostcssPlugins(config, vueConfig, vusionConfig);
