@@ -1,4 +1,5 @@
 const chainDoc = require('./chainDoc');
+const chainMobile = require('./chainMobile');
 
 module.exports = function registerDoc(api, vueConfig, vusionConfig) {
     const serveCommand = api.service.commands.serve;
@@ -9,6 +10,7 @@ module.exports = function registerDoc(api, vueConfig, vusionConfig) {
         options: serveCommand.opts.options,
     }, (args) => {
         chainDoc(api, vueConfig, vusionConfig);
+        chainMobile(api, vueConfig, vusionConfig);
         return serveCommand.fn(args);
     });
 };

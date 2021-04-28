@@ -33,7 +33,7 @@
     "@babel/generator": "^7.11.6",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.5.5",
-    "@dcloudio/uni-cli-shared": "^2.0.0-31820210406002",
+    "@dcloudio/uni-cli-shared": "^2.0.0-31920210423001",
     "@dcloudio/vue-cli-plugin-uni": "^2.0.0-31820210406002",
     "@vusion/md-vue-loader": "^1.4.0",
     "@vusion/mini-css-extract-plugin": "^0.8.5",
